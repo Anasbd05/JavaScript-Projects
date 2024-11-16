@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+}
+body{
+    background: linear-gradient(rgb(19, 109, 60) , lightblue);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 360px;
+    height: 440px;
+    background: whitesmoke;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+}
+.container form{
+    position: absolute;
+    width: 330px;
+    top: 100px;
+    left: 10px;
+    transition: .5s ease-in-out;
+}
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none; 
+    background: transparent;
+}
+input::placeholder{
+    color: #777;
+    font-size: 14px;
+}
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+form button{
+    height: 35px ;
+    width: 110px;
+    background: linear-gradient(teal , mediumseagreen);
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: cursive;
+    border-radius: 30px;
+}
+#form2{
+    left: 450px;
+}
+#form3{
+    left: 450px;
+}
+.step-row{
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.427) ; 
+    position: relative;
+    font-size: 18px;
+}
+.step-col{
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+#progress{
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right, teal , mediumseagreen);
+    transition: .5s ease-in-out;
+}
+#progress::after{
+    content: '';
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    border-left: 20px solid mediumseagreen ;
+}

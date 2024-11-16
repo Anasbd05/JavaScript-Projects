@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+ul{
+    display: flex;
+    gap: 40px;
+}
+ul li a{
+    text-decoration: none;
+    color: snow;
+    text-transform: capitalize;
+}
+.navbar img{
+    width: 50px;
+}
+p{
+    color: white;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+button{
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: 1px solid lightslategray;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    letter-spacing: 0.6px;
+}
+#title{
+    background: linear-gradient(to right , rgb(1, 87, 87) , skyblue , snow);
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: animate 4s infinite ease-in-out ;
+}
+@keyframes animate {
+    0%{
+        background-position: 200%;
+    }
+    200%{
+        background-position: 0%;
+    }
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items :start;
+    justify-content: start;
+}
+.section{
+    align-items: center;
+    display: flex;
+    justify-content:space-around;
+    gap: 50px;
+}
+.phone img{
+    width: 320px;
+    height: 500px;
+}
+.choices img{
+    height: 70px;  
+    cursor: pointer;  
+}
+.choices{
+    margin-left: 35%;
+    margin-top: -10%;
+}
+.choices img:hover{
+    translate: -5px -5px;
+}
+::selection{
+   background-color: white;
+    color: rgba(87, 87, 87, 0.701);
+}

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    list-style: none;
+}
+
+:root {
+    --primary-color: snow;
+    --secondary-color: #222;
+}
+
+.darkTheme {
+    --primary-color: rgb(0, 0, 0);
+    --secondary-color: #e4e4e4;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+ul {
+    display: flex;
+    gap: 30px;
+}
+
+li {
+    color: var(--secondary-color);
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+h1 {
+    background: linear-gradient(to left, red, orangered, orange, yellow);
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: animete 3s linear infinite;
+}
+
+@keyframes animete {
+    from {
+        background-position: 200%;
+    }
+
+    to {
+        background-position: 0%;
+    }
+}

@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --btn--dark :linear-gradient(to right , rgb(159, 0, 0) , rgb(237, 135, 98)) ;
+    --bg-light:#cecece ;
+    --text-light:#000000 ;
+    --btn-light: black ;    
+}
+.darkTheme{
+    --bg-dark:#111 ;
+    --text--dark-:#fff ;
+    --btn--dark :linear-gradient(to right , rgb(159, 0, 0) , rgb(237, 135, 98)) ;
+}
+body{
+    background-color: var(--bg-dark);
+    color: var(--text--dark-);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    margin: 6px 0;
+    background: var(--bg-light);
+    color: var(--text-light);
+    border-radius: 8px ;
+    padding: 8px ;
+}
+input:focus{
+    background: var(--bg-light);
+    color: var(--text-light);
+    scale: 1.01;
+}
+input::placeholder{
+    color: var(--text--light-);
+    text-transform: capitalize;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#total{
+    background: var(--btn--dark);
+    padding: 8px ;
+    border-radius: 8px;
+    display: flex;
+    margin-left: 15px;
+    font-weight: 700;
+
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    margin: 10px 0;
+    width: 100%;
+    background: var(--btn--dark);
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 40px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+button:hover{
+    background: var(--bg-light);
+    color: var(--text-light);  
+    transition: .7s all; 
+}
+.btnSearch{
+    display: flex;
+    gap: 40px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    margin-left: -10px;
+}
+table th{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+th , td{
+    padding: 2px;
+    font-size: 12px;
+}
